@@ -1,32 +1,36 @@
 package automationbatch44;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.ListIterator;
-import java.util.PriorityQueue;
 
-public class Priority_Queue {
+public class Hashset_Properties { 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-     PriorityQueue<Integer> P=new PriorityQueue<Integer>();
-     P.add(85);
-     P.add(45);
-     P.add(36);
-     P.add(24);
-     P.add(26);
-     P.add(10);
-     P.add(55);
-     P.add(10);
-     P.add(55);
-   // Collections.sort(P);
-    System.out.println(P);
-    Iterator i1=P.iterator();    // iterator
+       HashSet H=new HashSet();
+       H.add(45);
+       H.add(32);
+       H.add(12);
+       H.add(15);
+      H.add("rose");
+       H.add("rose");
+       H.add(null);
+       H.add(null);
+    System.out.println(H); 
+   /* HashSet H1=new HashSet();
+    H1.add(45);
+    H1.add(32);
+    H1.add(12);
+    H1.add(15); 
+    Collections.sort(H1);*/
+    Iterator i1=H.iterator();    // iterator
     System.out.println("Iterator");
      while(i1.hasNext()) {
     	System.out.println(i1.next());
      }
-   /*   ListIterator L1=P.listIterator(); // forward iteration ListIterator
+  /*   ListIterator L1=H.listIterator(); // forward iteration ListIterator
      System.out.println("Forward Iteration using ListIterator");  
      while(L1.hasNext()) 
      {
@@ -35,6 +39,8 @@ public class Priority_Queue {
      System.out.println("Backward Iteration using ListIterator");  
      while (L1.hasPrevious())  {         // backward iteration ListIterator
       System.out.println(L1.previous());  */
-     }
-	
+    	  }
+  
 	}
+
+
